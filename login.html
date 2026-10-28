@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Student Hub Portal</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <table width="80%">
+            <tr>
+                <td width="120">
+                    <img src="Logo.jpg"
+                         alt="Student Hub Portal Logo"
+                         width="100">
+                </td>
+
+                <td align="center">
+                    <h1>STUDENT HUB PORTAL</h1>
+                </td>
+            </tr>
+        </table>
+
+        <hr width="80%">
+
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+        <center>
+            <table border="1" cellpadding="10"
+                   cellspacing="0" width="50%">
+
+                <tr align="center">
+
+                    <td>
+                        <a href="index.html">Home</a>
+                    </td>
+
+                    <td>
+                        <a href="about.html">About Us</a>
+                    </td>
+
+                    <td>
+                        <a href="contact.html">Contact Us</a>
+                    </td>
+
+                </tr>
+
+            </table>
+        </center>
+    </nav>
+
+    <br><br>
+
+    <!-- ================= LOGIN FORM ================= -->
+
+    <main>
+
+        <center>
+
+            <h2>Student Login</h2>
+
+            <form action="dashboard.html">
+
+                <table cellpadding="10">
+
+                    <tr>
+                        <td>
+                            <label for="userid">User ID:</label>
+                        </td>
+
+                        <td>
+                            <input
+                                type="text"
+                                id="userid"
+                                name="userid"
+                                required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+
+                        <td>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input
+                                type="submit"
+                                value="Login">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+
+            <br>
+
+            <p>Don't have an account?</p>
+
+            <a href="register.html">
+                <button type="button">Register Here</button>
+            </a>
+
+        </center>
+
+    </main>
+
+    <br><br>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <hr width="80%">
+
+        <p>© 2026 Student Hub Portal</p>
+
+    </footer>
+
+</body>
+
+</html>

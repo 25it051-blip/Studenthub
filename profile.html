@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - Student Hub Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <style>
+        .profile-heading {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile-box {
+            padding: 30px;
+        }
+
+        .top-section {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 200px;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .student-info h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .student-info p {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+
+        .photo-box {
+            width: 200px;
+            height: 230px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f2f5f9;
+            border: 1px solid #d6dee8;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+        }
+
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .profile-table th,
+        .profile-table td {
+            padding: 12px 15px;
+            border: 1px solid #d7e0ea;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .profile-table th {
+            width: 40%;
+            background-color: #eaf2fb;
+        }
+
+        .profile-actions {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .profile-box {
+                padding: 15px;
+            }
+
+            .top-section {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .photo-box {
+                width: 170px;
+                height: 200px;
+                margin: 0 auto;
+            }
+
+            .student-info h3 {
+                font-size: 22px;
+            }
+
+            .profile-table th,
+            .profile-table td {
+                padding: 9px 7px;
+                font-size: 14px;
+                overflow-wrap: anywhere;
+            }
+
+            .profile-table th {
+                width: 42%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="Logo.jpg" alt="Student Hub Portal Logo">
+        <h1>STUDENT HUB PORTAL</h1>
+    </header>
+
+    <nav>
+        <table class="nav">
+            <tbody>
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="dashboard.html">Dashboard</a></td>
+                    <td><a href="about.html">About Us</a></td>
+                    <td><a href="contact.html">Contact Us</a></td>
+                    <td><a href="login.html">Logout</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </nav>
+
+    <main>
+        <section class="profile-section">
+
+            <h2 class="profile-heading">Student Profile</h2>
+
+            <div class="profile-box">
+
+                <div class="top-section">
+
+                    <div class="student-info">
+                        <h3>Aesha Rakeshkumar Makwana</h3>
+
+                        <p><strong>Student ID:</strong> 25IT051</p>
+                        <p><strong>Department:</strong> Information Technology</p>
+                        <p><strong>Semester:</strong> 3</p>
+                    </div>
+
+                    <div class="photo-box">
+                        <img src="aesha.jpeg" alt="Aesha Makwana - Student Profile Photo">
+                    </div>
+
+                </div>
+
+                <div class="table-container">
+                    <table class="profile-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Student Name</th>
+                                <td>Aesha Rakeshkumar Makwana</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Student ID</th>
+                                <td>25IT051</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Department</th>
+                                <td>Information Technology</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Semester</th>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Date of Birth</th>
+                                <td>14/02/2008</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Gender</th>
+                                <td>Female</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email ID</th>
+                                <td>25IT051@charusat.edu.in</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mobile Number</th>
+                                <td>9274421706</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Blood Group</th>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Address</th>
+                                <td>Gujarat, India</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="profile-actions">
+                    <a href="dashboard.html" class="button">Back to Dashboard</a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Student Hub Portal | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
